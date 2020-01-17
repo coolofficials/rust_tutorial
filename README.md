@@ -2,16 +2,20 @@
  Rust Tutorial
 
 # cargo build
- compiles .rs and creates binary file without optimization process.
+ Compiles .rs and creates binary file without optimization process.
+ Automatically detects changes, and if none, will not compile anything. >> very awesome!
 
 # cargo run
- compiles .rs, creates binary file and run it.
+ Compiles .rs, creates binary file and run it.
 
 # cargo check
- check whether .rs is compilable or not.
+ Check whether .rs is compilable or not.
 
 # cargo build --release
- creates optimized binary file.
+ Creates optimized binary file.
+
+# git push -u origin master
+ Updates master branch.
 
 # Index
 1. hell_cargo
