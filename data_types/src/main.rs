@@ -11,6 +11,10 @@ fn main() {
 //  println!("{}", 43.5 % 5); type error
     println!("{}", 43.58 % 5.1); // should return 2.78 but returning 2.780000000000001
     println!("{}", 43.58 / 5.1);
+    
+    let tup: (i32, f64, u8) = (500, 6.4, 1);
+    let tup2: (char, char, i32) = ('a', 'b', 100);
+//  let tup2: (i32, f64, u8) = (1, 500, 6.4); throws an error with type matching.
 }
 
 // **** salar types: integers, floating-point numbers, booleans, characters. ****
@@ -50,3 +54,34 @@ fn main() {
 // compound types can group multiple values into one type.
 
 // [The Tuple Type]
+// bind multiple values in () and make a tuple.
+// type of values may differ in tuples.
+// let tup: (i32, f64, u8) = (500, 6.4, 1);
+// have a fixed length.
+
+// we can separate tuples into separate variables,
+// in above case, let (x, y, z) = tup; then x:i32 == 500, y:f64 == 6.4, z:u8 == 1.
+// this is called destructuring.
+// another way of destructing: tup.0; tup.1; ...
+
+// [The Array Type]
+// every element of an array must have the same type.
+// arrays in rust have a fixed length.
+// a = [1, 2, 3, 4, 5];
+
+// arrays are useful when we want our data allocated on the stack rather than the heap.
+// or when we want to ensure we always have a fixed number of elements(example: list of months).
+// a vector is a similar collection type provided by the std library, which is allowed to grow or shrink in size.
+
+// we can wirte an array's type by using square brackets, and within the brackets include the type of each element, a semicolon, and then the number of elements in the array, like so:
+// let a: [i32, 5] = [1, 2, 3, 4, 5];
+
+// let a = [3; 5]; means a = [3, 3, 3, 3, 3].
+
+// Accessing Array Elements
+// a[1];
+// invalid accessing:
+// let a = [1, 2, 3, 4, 5];
+// let index = 10;
+// let element = a[index];
+// runtime error because index(10)>length of array(5), not a compile error.

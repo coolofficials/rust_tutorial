@@ -86,7 +86,7 @@ fn main() {
 
         // 3. cmp method compares two values and can be called on anything that can be compared.
         // 3. it takes a reference to whatever you want to compare with.
-        // 3. match expression is made up of arms(similar with branches of a tree). an arm consists of a pattern and the code that should be run if the vlue given to the beginning of the 'match' expression fits that arm's pattern.
+        // 3. match expression is made up of arms(similar with branches of a tree). an arm consists of a pattern and the code that should be run if the value given to the beginning of the 'match' expression fits that arm's pattern.
         // 3. the code will not be compiled since rust has a static type system.
         // 3. guess is a String, while secret_number is an integer(without mentioning, i32).
         match guess.cmp(&secret_number) {
